@@ -5,7 +5,7 @@ from datetime import datetime, timezone
 app = Flask(__name__)
 
 START_DATE = datetime(2025, 10, 1, tzinfo=timezone.utc)
-WISHES = ["Trung Thu rùi, mún ngắm trăng cùng Xù quê òoo🌕💕", "Bánh Trung Thu ngọt đến mấy cũng không bằng nụ cười của Xù :333 🥮😊", "Chúc Xù Trung Thu zui zẻ nhooooooooooooooooooooo", "Iu gái quá >.< ", "Xa nhau mà vẫn nhớ Xù từng giây từng phút 🥺💕", "Xù là ánh trăng đẹp nhất trong đời anh 🌙✨", "Mong sao Trung Thu này mình được ở bên nhau nha 💑", "Dù cách xa mấy cũng không làm anh bớt yêu em đâu 💖"]
+WISHES = ["Trung Thu rùi, mún ngắm trăng cùng Xù quó òoo🌕💕", "Bánh Trung Thu ngọt đến mấy cũng không bằng nụ cười của Xù :333 🥮😊", "Chúc Xù Trung Thu zui zẻ nhooooooooooooooooooooo", "Iu gái quá >.< ", "Xa nhau mà vẫn nhớ Xù từng giây từng phút 🥺💕", "Xù là ánh trăng đẹp nhất trong đời anh 🌙✨", "Mong sao Trung Thu này mình được ở bên nhau nha 💑", "Dù cách xa mấy cũng không làm anh bớt yêu em đâu 💖"]
 
 # DANH SÁCH TÊN FILE NHẠC TRONG THƯ MỤC ASSETS
 MUSIC_FILES = [
@@ -135,4 +135,5 @@ def get_love_days():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
+
 
