@@ -630,7 +630,7 @@ HTML_TEMPLATE = """
 
     <div class="container">
         <h1>🌙 Trung Thu Yêu Thương 🌙</h1>
-        <p class="subtitle">Tặng người em yêu nhất ❤️</p>
+        <p class="subtitle">Tụi mình là ny đúm hong zọ (❁´◡`❁)</p>
         
         <div class="divider"></div>
         
@@ -726,4 +726,5 @@ def serve_font(filename):
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
+
 
