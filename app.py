@@ -18,7 +18,7 @@ HTML_TEMPLATE = """
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trung Thu Yêu Thương 🥮💕</title>
+    <title>Qùa cho PÉ EWWWWWWW 🥮💕</title>
     <style>
         @font-face {
             font-family: 'SVN-Ready';
@@ -726,3 +726,4 @@ def serve_font(filename):
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
+
