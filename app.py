@@ -629,8 +629,8 @@ HTML_TEMPLATE = """
     </script>
 
     <div class="container">
-        <h1>🌙 Trung Thu Yêu Thương 🌙</h1>
-        <p class="subtitle">Tụi mình là ny đúm hong zọ (❁´◡`❁)</p>
+        <h1>🌙Quà Trung Thu🌙</h1>
+        <p class="subtitle">Tụi mình là ny đúm hong zọ Xùu (❁´◡`❁)</p>
         
         <div class="divider"></div>
         
@@ -664,7 +664,7 @@ HTML_TEMPLATE = """
         <!-- Countdown -->
         <div class="countdown">
             <span>Câu chúc mới sau</span>
-            <div class="timer-circle" id="countdown">10</div>
+            <div class="timer-circle" id="countdown">5</div>
             <span>giây</span>
         </div>
         
@@ -677,7 +677,7 @@ HTML_TEMPLATE = """
     </div>
     
     <script>
-        let countdown = 10;
+        let countdown = 5;
         let countdownInterval;
         
         function updateCountdown() {
@@ -686,7 +686,7 @@ HTML_TEMPLATE = """
             
             if (countdown <= 0) {
                 getNewWish();
-                countdown = 10;
+                countdown = 5;
             }
         }
         
@@ -726,6 +726,7 @@ def serve_font(filename):
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
+
 
 
 
