@@ -4,8 +4,8 @@ from datetime import datetime, timezone
 
 app = Flask(__name__)
 
-START_DATE = datetime(2025, 10, 1, tzinfo=timezone.utc)
-WISHES = ["Trung Thu rùi, mún ngắm trăng cùng Xù quê òoo🌕💕", "Bánh Trung Thu ngọt đến mấy cũng không bằng nụ cười của Xù :333 🥮😊", "Chúc Xù Trung Thu zui zẻ nhooooooooooooooooooooo", "Iu gái quá >.< ", "Xa nhau mà vẫn nhớ Xù từng giây từng phút 🥺💕", "Xù là ánh trăng đẹp nhất trong đời anh 🌙✨", "Mong sao Trung Thu này mình được ở bên nhau nha 💑", "Dù cách xa mấy cũng không làm anh bớt yêu em đâu 💖"]
+START_DATE = datetime(2025, 7, 23, tzinfo=timezone.utc)
+WISHES = ["Trung Thu rùi, mún ngắm trăng cùng Trà My quó òoo🌕💕", "Bánh Trung Thu ngọt đến mấy cũng không bằng nụ cười của My :333 🥮😊", "Chúc My Trung Thu zui zẻ nhooooooooooooooooooooo", "Iu gái quá >.< ", "Xa nhau mà vẫn nhớ My từng giây từng phút 🥺💕", "My là ánh trăng đẹp nhất trong đời anh 🌙✨", "Mong sao Trung Thu này mình được ở bên nhau nha 💑", "Dù cách xa mấy cũng không làm anh bớt yêu em đâu 💖"]
 
 # DANH SÁCH TÊN FILE NHẠC TRONG THƯ MỤC ASSETS
 MUSIC_FILES = [
@@ -38,7 +38,7 @@ HTML_TEMPLATE = """
     <!-- === PHẦN LOGIC TÌNH YÊU TRUNG THU ĐÃ ĐƯỢC TRẢ LẠI ĐÂY === -->
     <div class="container">
         <h1 id="main-title">🥮 Quà Trung Thu 🥮</h1>
-        <p class="subtitle">Tụi mình là ny đúm hong zọ Xùu (❁´◡`❁)</p>
+        <p class="subtitle">Trung Thu zui zẻ nhoaaaaaaa (❁´◡`❁)</p>
         <div class="love-counter">
             <p class="love-counter-label">Mình đã bên nhau</p>
             <p class="love-counter-days" id="loveDays">...</p>
@@ -103,7 +103,7 @@ HTML_TEMPLATE = """
         const canvas = document.getElementById('drawCanvas'); const ctx = canvas.getContext('2d');
         function resizeCanvas() { canvas.width = window.innerWidth; canvas.height = window.innerHeight; }
         resizeCanvas(); window.addEventListener('resize', resizeCanvas);
-        function drawName(e) { e.stopPropagation(); createConfetti(e.clientX, e.clientY); const text = 'iu xù :3'; const x = Math.random() * (window.innerWidth - 300) + 150; const y = Math.random() * (window.innerHeight - 200) + 150; ctx.font = 'bold 90px "Pacifico", cursive'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; let progress = 0; const drawInterval = setInterval(() => { progress += 0.03; if (progress >= 1) { clearInterval(drawInterval); setTimeout(() => fadeOutText(x, y, text), 2000); return; } ctx.clearRect(0, 0, canvas.width, canvas.height); const gradient = ctx.createLinearGradient(x - 100, y, x + 100, y); gradient.addColorStop(0, '#ff6b9d'); gradient.addColorStop(0.5, '#ffd700'); gradient.addColorStop(1, '#ff6b9d'); ctx.strokeStyle = '#8b4513'; ctx.lineWidth = 6; ctx.globalAlpha = progress; ctx.strokeText(text, x, y); ctx.fillStyle = gradient; ctx.globalAlpha = progress; ctx.fillText(text, x, y); ctx.globalAlpha = 1; }, 20); }
+        function drawName(e) { e.stopPropagation(); createConfetti(e.clientX, e.clientY); const text = 'iu My :3'; const x = Math.random() * (window.innerWidth - 300) + 150; const y = Math.random() * (window.innerHeight - 200) + 150; ctx.font = 'bold 90px "Pacifico", cursive'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; let progress = 0; const drawInterval = setInterval(() => { progress += 0.03; if (progress >= 1) { clearInterval(drawInterval); setTimeout(() => fadeOutText(x, y, text), 2000); return; } ctx.clearRect(0, 0, canvas.width, canvas.height); const gradient = ctx.createLinearGradient(x - 100, y, x + 100, y); gradient.addColorStop(0, '#ff6b9d'); gradient.addColorStop(0.5, '#ffd700'); gradient.addColorStop(1, '#ff6b9d'); ctx.strokeStyle = '#8b4513'; ctx.lineWidth = 6; ctx.globalAlpha = progress; ctx.strokeText(text, x, y); ctx.fillStyle = gradient; ctx.globalAlpha = progress; ctx.fillText(text, x, y); ctx.globalAlpha = 1; }, 20); }
         function fadeOutText(x, y, text) { let alpha = 1; const fadeInterval = setInterval(() => { alpha -= 0.05; if (alpha <= 0) { clearInterval(fadeInterval); ctx.clearRect(0, 0, canvas.width, canvas.height); return; } ctx.clearRect(0, 0, canvas.width, canvas.height); const gradient = ctx.createLinearGradient(x - 100, y, x + 100, y); gradient.addColorStop(0, '#ff6b9d'); gradient.addColorStop(0.5, '#ffd700'); gradient.addColorStop(1, '#ff6b9d'); ctx.globalAlpha = alpha; ctx.strokeStyle = '#8b4513'; ctx.lineWidth = 6; ctx.strokeText(text, x, y); ctx.fillStyle = gradient; ctx.fillText(text, x, y); ctx.globalAlpha = 1; }, 50); }
         function createConfetti(x, y) { const colors = ['#ff6b9d', '#ffd700', '#ff1744', '#00bcd4', '#9c27b0', '#4caf50']; const shapes = ['💕', '⭐', '🌟', '💖', '✨']; for (let i = 0; i < 30; i++) { const confetti = document.createElement('div'); confetti.className = 'confetti'; confetti.style.left = x + 'px'; confetti.style.top = y + 'px'; confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)]; confetti.style.animationDuration = (Math.random() * 2 + 2) + 's'; confetti.style.animationDelay = (Math.random() * 0.3) + 's'; if (Math.random() > 0.5) { confetti.textContent = shapes[Math.floor(Math.random() * shapes.length)]; confetti.style.backgroundColor = 'transparent'; confetti.style.fontSize = '20px'; } document.body.appendChild(confetti); setTimeout(() => confetti.remove(), 4000); } }
         for (let i = 0; i < 60; i++) { let star = document.createElement('div'); star.className = 'star'; let size = Math.random() * 2.5 + 1; star.style.width = size + 'px'; star.style.height = size + 'px'; star.style.left = Math.random() * 100 + '%'; star.style.top = Math.random() * 100 + '%'; star.style.animationDuration = (Math.random() * 3 + 1.5) + 's'; star.style.animationDelay = Math.random() * 5 + 's'; document.body.appendChild(star); }
@@ -135,4 +135,3 @@ def get_love_days():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
-
