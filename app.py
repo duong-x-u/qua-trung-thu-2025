@@ -500,7 +500,7 @@ HTML_TEMPLATE = """
         function drawName(e) {
             e.stopPropagation();
             
-            const text = 'Mãi iu pé Linh <3';
+            const text = 'iu xù :3';
             const x = Math.random() * (window.innerWidth - 300) + 150;
             const y = Math.random() * (window.innerHeight - 200) + 150;
             
@@ -726,5 +726,6 @@ def serve_font(filename):
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
+
 
 
