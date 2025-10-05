@@ -9,9 +9,9 @@ WISHES = ["Trung Thu rùi, mún ngắm trăng cùng Xù quê òoo🌕💕", "Bá
 
 # DANH SÁCH TÊN FILE NHẠC TRONG THƯ MỤC ASSETS
 MUSIC_FILES = [
-    'btyl.mp3',
+    'btyl-rm.mp3',
     'cđôt.mp3',
-    'btyl-rm.mp3'
+    'btyl.mp3'
 ]
 
 HTML_TEMPLATE = """
@@ -37,7 +37,7 @@ HTML_TEMPLATE = """
     
     <!-- === PHẦN LOGIC TÌNH YÊU TRUNG THU ĐÃ ĐƯỢC TRẢ LẠI ĐÂY === -->
     <div class="container">
-        <h1 id="main-title">🌙Quà Trung Thu🌙</h1>
+        <h1 id="main-title">🥮 Quà Trung Thu 🥮</h1>
         <p class="subtitle">Tụi mình là ny đúm hong zọ Xùu (❁´◡`❁)</p>
         <div class="love-counter">
             <p class="love-counter-label">Mình đã bên nhau</p>
@@ -135,3 +135,4 @@ def get_love_days():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
+
